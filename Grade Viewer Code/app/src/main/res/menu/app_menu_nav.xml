@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group
+        android:id="@+id/top_menu"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/menu_classList"
+            android:icon="@drawable/ic_class_list"
+            android:title="@string/class_list"/>
+
+        <item android:id="@+id/menu_profile"
+            android:icon="@drawable/ic_person_colored"
+            android:title="@string/profile"/>
+
+        <item
+            android:id="@+id/menu_archiveClass"
+            android:title="@string/archived_classes"
+            android:icon="@drawable/ic_archive"/>
+
+    </group>
+
+    <group
+        android:id="@+id/mid_menu"
+        android:checkableBehavior="single">
+            <item android:id="@+id/menu_privacy"
+                android:icon="@drawable/ic_policy"
+                android:title="@string/privacy_policy"/>
+
+            <item android:id="@+id/menu_terms"
+                android:icon="@drawable/ic_terms"
+                android:title="@string/terms_and_conditions"/>
+    </group>
+
+    <group
+        android:id="@+id/bottom_menu"
+        android:checkableBehavior="none">
+        <item android:id="@+id/menu_logout"
+            android:icon="@drawable/ic_logout"
+            android:title="@string/log_out"/>
+    </group>
+</menu>

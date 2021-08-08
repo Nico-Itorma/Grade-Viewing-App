@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_ViewGradeByStudent">
+
+    <include
+        android:id="@+id/grade_view"
+        layout="@layout/toolbar" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:layout_below="@id/grade_view"
+        android:layout_marginBottom="8dp"
+        android:padding="10dp"
+        app:cardBackgroundColor="@color/light_green"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/tv_gradeView_subjectName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppinsmedium"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_gradeView_YandB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_gradeView_subjectName"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppinsmedium"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_gradeView_profName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_gradeView_YandB"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppinsmedium"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv1_gradeView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_gradeView_profName"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/final_grade"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_gradeView_finalGrade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/tv1_gradeView"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/tv1_gradeView"
+                android:ellipsize="end"
+                android:fontFamily="@font/poppinsmedium"
+                android:maxLines="1"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_AddStudent">
+
+    <include android:id="@+id/add_student_tb" layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/add_student_tb">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="@string/add_student_to_subject"
+                android:fontFamily="@font/poppinsmedium"
+                android:textSize="18sp"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/subject_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsmedium"
+                android:layout_marginTop="15dp"
+                app:layout_constraintTop_toBottomOf="@id/tv1"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                android:id="@+id/subject_yearAndBlock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/poppinsmedium"
+                app:layout_constraintTop_toBottomOf="@id/subject_name"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+            <View
+                android:id="@+id/view1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/true_gray"
+                app:layout_constraintTop_toBottomOf="@id/subject_yearAndBlock" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/et_layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:textColorHint="@color/true_gray"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/et_student_idNum"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:hint="@string/student_id_number"
+                    android:digits="0123456789-"
+                    android:inputType="textNoSuggestions"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    app:fontFamily="@font/poppinsmedium"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tv1" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/true_gray"
+                app:layout_constraintBottom_toBottomOf="@id/et_layout1" />
+
+            <Button
+                android:id="@+id/btn_addStudent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:backgroundTint="#005bff"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="@string/add"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <ProgressBar
+                android:id="@+id/progress_addStudent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</RelativeLayout>

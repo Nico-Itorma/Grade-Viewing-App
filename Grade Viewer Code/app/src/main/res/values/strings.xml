@@ -1,0 +1,68 @@
+<resources>
+    <string name="app_name">Grade View</string>
+    <string name="fab">fab</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- log in -->
+    <string name="log_in_to_your_account">Log in to your account</string>
+    <string name="login_btn">Login</string>
+    <string name="terms_and_conditions">Terms and Conditions</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="username_login_et">ID number</string>
+    <string name="password_login_et">Password</string>
+    <string name="forgot_password_login">Forgot Password?</string>
+    <string name="no_account_yet_tv_login">No account yet?</string>
+    <string name="no_account">Sign up</string>
+
+    <!--    sign up-->
+    <string name="sign_up_for_a_new_account">Sign up for a new account</string>
+    <string name="full_name_signup">Full name*</string>
+    <string name="username_signup">ID number*</string>
+    <string name="password_signup">Password*</string>
+    <string name="re_enter_password">Re-enter password*</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="login_here_tv_signup">here</string>
+    <string name="already_have_an_account_signup">Already have an account? Login</string>
+    <string name="please_select_your_profession">Please select type of user:</string>
+    <string name="student">Student</string>
+    <string name="professor">Professor</string>
+
+    <!--    activity_add_course-->
+    <string name="subject_code_or_subject_name">Subject code or Subject name*</string>
+    <string name="e_g_pe">e.g: PE</string>
+    <string name="program">Program</string>
+    <string name="grade_level">Grade level</string>
+    <string name="e_g_5">e.g: 5</string>
+    <string name="section">Section</string>
+    <string name="department">Department</string>
+    <string name="save">SAVE</string>
+
+    <!--    activity_add_student-->
+    <string name="add_student_to_subject">Add student to: </string>
+    <string name="student_id_number">Student ID Number</string>
+    <string name="add">ADD</string>
+
+    <!--    nav_menu-->
+    <string name="class_list">Class list</string>
+    <string name="profile">Profile</string>
+    <string name="log_out">Log out</string>
+    <string name="reset_password">Reset Password</string>
+
+    <string name="fetching_subject_list_fragment_courselist">Fetching Subject Lists</string>
+    <string name="final_grade">Final Grade:</string>
+    <string name="internet_connection">Internet Connection</string>
+    <string name="empty_placeholder" />
+    <string name="required_field">Required field</string>
+    <string name="edit">Edit</string>
+    <string name="delete">Delete</string>
+    <string name="archived_classes">Archived classes</string>
+    <string name="subjects_enrolled">Subjects enrolled</string>
+    <string name="change_password">Change password</string>
+    <string name="new_password">New password</string>
+    <string name="re_enter_new_password">Re enter new password</string>
+    <string name="password">Password</string>
+    <string name="login_success">Login success</string>
+
+
+</resources>

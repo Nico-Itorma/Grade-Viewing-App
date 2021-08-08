@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity_Student_Grades">
+
+    <include android:id="@+id/add_grade_toolbar" layout="@layout/toolbar"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false"
+        android:layout_below="@id/add_grade_toolbar">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:layout_margin="10dp"
+            android:layout_marginBottom="50dp"
+            app:cardElevation="6dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/add_grade_toolbar"
+                android:background="@drawable/gradient_bg"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/tv_addGrade_studentName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/tv_addGrade_studentIDNum"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:gravity="center"
+                    android:layout_alignParentEnd="true"
+                    android:layout_below="@id/tv_addGrade_studentName"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/tv_addGrade_subject_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="30dp"
+                    android:layout_below="@id/tv_addGrade_studentIDNum"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/tv_addGrade_yearandblock"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_below="@id/tv_addGrade_subject_name"
+                    android:layout_alignParentStart="true"/>
+
+                <TextView
+                    android:id="@+id/tv1_addGrade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/final_grade"
+                    android:layout_below="@id/tv_addGrade_yearandblock"
+                    android:layout_alignParentStart="true"/>
+
+                <EditText
+                    android:id="@+id/et_addGrade_finalGrade"
+                    android:layout_width="50dp"
+                    android:textColor="@color/black"
+                    android:background="@color/transparent"
+                    android:fontFamily="@font/poppinsmedium"
+                    android:layout_toEndOf="@id/tv1_addGrade"
+                    android:inputType="numberDecimal"
+                    android:layout_marginStart="15dp"
+                    android:labelFor="@id/et_addGrade_finalGrade"
+                    android:layout_alignTop="@id/tv1_addGrade"
+                    android:layout_height="wrap_content"/>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="50dp"
+                    android:layout_height="0.5dp"
+                    android:background="@color/true_gray"
+                    android:layout_marginStart="15dp"
+                    android:layout_alignBottom="@id/et_addGrade_finalGrade"
+                    android:layout_toEndOf="@id/tv1_addGrade"/>
+
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </ScrollView>
+</RelativeLayout>
